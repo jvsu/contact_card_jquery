@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Contact Card</title>
+	<link rel="stylesheet" type="text/css" href="cc.css">
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script type="text/javascript">
+
+			$(document).on("click","#sub", function(){
+				 var first_name = $("input[name='first_name']").val();
+				var last_name = $("input[name='last_name']").val();
+				var img = $("input[name='img']").val();
+				 var description = $("textarea[name='description']").val();
+				$(".stack").append("<div class='card'><img class='profile_pic' src="+img+"><p id='name'>"+first_name+" "+last_name+"</p><p class='description'>"+description+"</p></div>");
+				$(".description").hide();
+					return false;
+			});
+			$(document).on("click","#name",function(){
+				$(this).hide();
+				$(this).siblings(".description").fadeIn();
+			});
+			$(document).on("click",".description",function(){
+				$(this).hide();
+				$(this).siblings("#name").fadeIn();
+			});
+		
+			
+	</script>
+	
+</head>
+<body>
+	<h3>Contact Flow:</h3>
+	<div class='stack'>
+
+
+	</div>
+	<div class='contact_info'>
+		<h1>Contact Information:</h1>
+		<form>
+			First Name <input type='text' name='first_name'>
+			Last Name <input type='text' name='last_name'>
+			Description<textarea name='description'></textarea>
+			Enter Profile Picture<input type='text' name='img' placeholder='Enter Image URL'>
+			<input type='submit' value='Submit' id='sub'>
+		</form>
+	</div>	
+	
+
+</body>
+</html>

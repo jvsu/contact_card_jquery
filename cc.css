@@ -1,0 +1,54 @@
+.contact_info input, textarea{
+			display:block;
+		}
+.stack{
+		display:block;
+		margin-left:300px;
+		height:400px;
+		width:1000px;
+		overflow-x: scroll;
+		 overflow-y: hidden;
+   		white-space: nowrap;
+		}
+.contact_info{
+		display:block;
+		margin-left: 500px;
+		}
+.card{
+	border:1px solid #D8D8D8;
+	width:380px;
+	height:380px;
+	margin:10px;
+	display:inline-block;
+	overflow-x: hidden;
+   	overflow-y: scroll;
+   	word-wrap: break-word; 
+	white-space: normal;
+	}
+.card img{
+	display: block;
+   	margin-left: auto;
+    margin-right: auto 
+	}
+
+#name{
+	 margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+	font-size: 24px;
+	}
+.description{
+		margin-left: auto;
+	    margin-right: auto;
+    	width: 20em;
+		}
+		.profile_pic{
+			width:250px;
+			height:250px;
+		}
+		h3{
+			margin-left:250px;
+			border-bottom:1px solid black;
+			width:300px;
+
+		}
